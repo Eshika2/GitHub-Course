@@ -1,0 +1,135 @@
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Eshika Dissanayake/Documents/Git Course/Day 1/.git/
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git add index.html
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git commit -m "This is my first commit"
+[master (root-commit) db2a35a] This is my first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   style.css
+
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git commit -m "Commit 2"
+[master fad4c13] Commit 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style.css
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git config --list --show-origin
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig init.defaultbranch=master
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.process=git-lfs filter-process
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.required=true
+file:C:/Users/Eshika Dissanayake/.gitconfig     user.name=Eshika Dissanayake
+file:C:/Users/Eshika Dissanayake/.gitconfig     user.email=151606601+Eshika2@users.noreply.github.com
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.symlinks=false
+file:.git/config        core.ignorecase=true
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git config user.email eshikauvinda20030505@gmail.com
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$ git config --list --show-origin
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig init.defaultbranch=master
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.process=git-lfs filter-process
+file:C:/Users/Eshika Dissanayake/.gitconfig     filter.lfs.required=true
+file:C:/Users/Eshika Dissanayake/.gitconfig     user.name=Eshika Dissanayake
+file:C:/Users/Eshika Dissanayake/.gitconfig     user.email=151606601+Eshika2@users.noreply.github.com
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.symlinks=false
+file:.git/config        core.ignorecase=true
+file:.git/config        user.email=eshikauvinda20030505@gmail.com
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 1 (master)
+$
