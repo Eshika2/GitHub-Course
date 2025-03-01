@@ -1,0 +1,149 @@
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3
+$ git init
+Initialized empty Git repository in C:/Users/Eshika Dissanayake/Documents/Git Course/Day 3/.git/
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git commit -m "Day3"
+[master (root-commit) 18667d5] Day3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+it
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git commit -m "update from master"
+[master 7ea5aad] update from master
+ 1 file changed, 1 insertion(+)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git branch feat-1-Eshika
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git branch
+  feat-1-Eshika
+* master
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git checkout feat-1-Eshika
+Switched to branch 'feat-1-Eshika'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git branch
+* feat-1-Eshika
+  master
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git status
+On branch feat-1-Eshika
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+g
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git commit -m "commited Eshika"
+[feat-1-Eshika 0d15e4d] commited Eshika
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+it
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git status
+On branch feat-1-Eshika
+nothing to commit, working tree clean
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-1-Eshika)
+$ git checkout master
+Switched to branch 'master'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git checkout feat-2-Uvinda
+error: pathspec 'feat-2-Uvinda' did not match any file(s) known to git
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git branch feat-2-Uvinda
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git branch -d feat-2-Uvinda
+Deleted branch feat-2-Uvinda (was 7ea5aad).
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git branch feat-2-Uvinda
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git checkout feat-2-Uvinda
+Switched to branch 'feat-2-Uvinda'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-2-Uvinda)
+$ git branch -d feat-2-Uvinda
+error: cannot delete branch 'feat-2-Uvinda' used by worktree at 'C:/Users/Eshika Dissanayake/Documents/Git Course/Day 3'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-2-Uvinda)
+$ gir checkout master
+bash: gir: command not found
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (feat-2-Uvinda)
+$ git checkout master
+Switched to branch 'master'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 3 (master)
+$ git branch -d feat-2-Uvinda
+Deleted branch feat-2-Uvinda (was 7ea5aad).
+
