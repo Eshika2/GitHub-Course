@@ -1,0 +1,69 @@
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 5 (master)
+$ git clone https://github.com/kubowania/memory-game.git
+Cloning into 'memory-game'...
+remote: Enumerating objects: 121, done.
+remote: Counting objects: 100% (50/50), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 121 (delta 40), reused 30 (delta 30), pack-reused 71 (from 2)
+Receiving objects: 100% (121/121), 63.77 KiB | 604.00 KiB/s, done.
+Resolving deltas: 100% (51/51), done.
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 5 (master)
+$ ls
+index.html  memory-game/
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 5 (master)
+$ cd memory-game
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 5/memory-game (master)
+$ ls
+README.md  app.js  images/  index.html  style.css
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 5/memory-game (master)
+$ git log --oneline
+cd0de6c (HEAD -> master, origin/master, origin/HEAD) Merge pull request #52 from kubowania/add-text
+5d00993 (origin/add-text) add text
+d8b4e18 git ignore
+bc1f744 Update app.js
+89644fb Update FUNDING.yml
+2b22652 Create FUNDING.yml
+556fe10 Update app.js
+d58b0db Update README.md
+07db216 Update README.md
+d066726 Merge pull request #5 from ignacio-villarejo-galan/master
+4cfe338 Avoid click on the same image and removeEventListener in white images
+61bd93e Delete text.js
+e709fc9 Delete white.png
+c92fd89 Delete pizza.png
+c9ea327 Delete milkshake.png
+acd18ad Delete ice-cream.png
+182de69 Delete hotdog.png
+50c21d7 Delete fries.png
+fe44c45 Delete cheeseburger.png
+eff0daf Delete blank.png
+a8abb38 Update app.js
+2fd21b5 Add files via upload
+0f1819b Create text.js
+196a352 Update app.js
+f0ac399 Add files via upload
+6bcb0e2 Delete white.png
+f5b92da Delete pizza.png
+484a370 Delete milkshake.png
+34b5080 Delete ice-cream.png
+4957092 Delete hotdog.png
+8afabaf Delete fries.png
+bc23157 Delete cheeseburger.png
+91ff5a7 Delete blank.png
+4a43cbb Update README.md
+824d216 Update README.md
+fa21f25 Add files via upload
+c6cd1fd Update README.md
+edb1600 Update README.md
+1f44469 Create style.css
+6dc6d19 Create index.html
+19cf8a4 Create app.js
+90fbea6 Initial commit
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 5/memory-game (master)
+$
