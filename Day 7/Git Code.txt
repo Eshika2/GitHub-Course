@@ -1,0 +1,268 @@
+------------------------------------------------------------UPSTREAM--------------------------------------------------------------------
+
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7
+$ git init
+Initialized empty Git repository in C:/Users/Eshika Dissanayake/Documents/Git Course/Day 7/.git/
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git commit -m "initial commit"
+[master (root-commit) 6745477] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git remote add origin git@github.com:Eshika2/upstream.git
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git branch -M main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git remote
+origin
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Eshika2/upstream.git
+ * [new branch]      main -> main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git commit -m "first commit"
+[main a9c50c2] first commit
+ 1 file changed, 1 insertion(+)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Eshika2/upstream.git
+   6745477..a9c50c2  main -> main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git commit -m "second commit"
+[main 9a156c7] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git pushv -u origin main
+git: 'pushv' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Eshika2/upstream.git
+   a9c50c2..9a156c7  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git checkout -b feat-1-login
+Switched to a new branch 'feat-1-login'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git log --oneline
+9a156c7 (HEAD -> feat-1-login, origin/main, main) second commit
+a9c50c2 first commit
+6745477 initial commit
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git status
+On branch feat-1-login
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+g
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git commit -m "fianlized the project"
+[feat-1-login e23800d] fianlized the project
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git push origin feat-1-login
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feat-1-login' on GitHub by visiting:
+remote:      https://github.com/Eshika2/upstream/pull/new/feat-1-login
+remote:
+To github.com:Eshika2/upstream.git
+ * [new branch]      feat-1-login -> feat-1-login
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git status
+On branch feat-1-login
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+g
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git commit -m "After fianlized"
+[feat-1-login 8c16696] After fianlized
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git push -u origin feat-1-login
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Eshika2/upstream.git
+   e23800d..8c16696  feat-1-login -> feat-1-login
+branch 'feat-1-login' set up to track 'origin/feat-1-login'.
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git status
+On branch feat-1-login
+Your branch is up to date with 'origin/feat-1-login'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+g
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git add .
+git
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git commit -m "testing"
+[feat-1-login af3e267] testing
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (feat-1-login)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Eshika2/upstream.git
+   8c16696..af3e267  feat-1-login -> feat-1-login
+
+
+-----------------------------------------------------------Fetch VS Pull------------------------------------------------------------------
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7
+$ git init
+Initialized empty Git repository in C:/Users/Eshika Dissanayake/Documents/Git Course/Day 7/.git/
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git commit -m "init"
+[master (root-commit) 16f6f21] init
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git remote add origin git@github.com:Eshika2/Fetch-VS-Pull.git
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (master)
+$ git branch -M main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Eshika2/Fetch-VS-Pull.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git fetch origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 979 bytes | 195.00 KiB/s, done.
+From github.com:Eshika2/Fetch-VS-Pull
+   16f6f21..017cfd0  main       -> origin/main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git log --oneline
+16f6f21 (HEAD -> main) init
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$ git pull origin
+Updating 16f6f21..017cfd0
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 7 (main)
+$
+
