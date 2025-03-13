@@ -1,0 +1,168 @@
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~
+$ ssh-keygen -t ed25519 -C "eshikauvinda20030505@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Eshika Dissanayake/.ssh/id_ed25519):
+Created directory '/c/Users/Eshika Dissanayake/.ssh'.
+Enter passphrase for "/c/Users/Eshika Dissanayake/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Eshika Dissanayake/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Eshika Dissanayake/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:jAeZbYgoa692pbyjX+ZuA9P7B5qawLqakKohIXvj3uk eshikauvinda20030505@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|   . . =         |
+|. . . = o        |
+| o     =         |
+|+.  . . S        |
+|++.o o o         |
+|*o+.=o+ .        |
+|=*oB=B   .       |
+|@=**Eoo..        |
++----[SHA256]-----+
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~
+$ eval "$(ssh-agent -s)"
+Agent pid 1073
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~
+$ ssh-add c:/Users/Eshika\ Dissanayake/.ssh/id_ed25519
+Identity added: c:/Users/Eshika Dissanayake/.ssh/id_ed25519 (eshikauvinda20030505@gmail.com)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6
+$ git clone git@github.com:kubowania/memory-game.git
+Cloning into 'memory-game'...
+remote: Enumerating objects: 121, done.
+remote: Counting objects: 100% (50/50), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 121 (delta 40), reused 30 (delta 30), pack-reused 71 (from 2)
+Receiving objects: 100% (121/121), 63.77 KiB | 2.66 MiB/s, done.
+Resolving deltas: 100% (51/51), done.
+
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe
+$ git init
+Initialized empty Git repository in C:/Users/Eshika Dissanayake/Documents/Git Course/Day 6/Tic tac toe/.git/
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        script.js
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 4da97de] Initial Commit
+ 3 files changed, 157 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 style.css
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git remote add origin git@github.com:Eshika2/Git-Day-6.git
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git remote
+origin
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git remote -v
+origin  git@github.com:Eshika2/Git-Day-6.git (fetch)
+origin  git@github.com:Eshika2/Git-Day-6.git (push)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (master)
+$ git branch -M main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.83 KiB | 939.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Eshika2/Git-Day-6.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (main)
+$ git branch
+* main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (main)
+$ git checkout -b feat-1-test
+Switched to a new branch 'feat-1-test'
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git branch
+* feat-1-test
+  main
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git status
+On branch feat-1-test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git add .
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git commit -m "my first commit from feat-1-test branch"
+[feat-1-test 3598321] my first commit from feat-1-test branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 New file.txt
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git status
+On branch feat-1-test
+nothing to commit, working tree clean
+g
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git log --oneline
+3598321 (HEAD -> feat-1-test) my first commit from feat-1-test branch
+4da97de (origin/main, main) Initial Commit
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git push -u origin feat-1-test
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 416 bytes | 416.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feat-1-test' on GitHub by visiting:
+remote:      https://github.com/Eshika2/Git-Day-6/pull/new/feat-1-test
+remote:
+To github.com:Eshika2/Git-Day-6.git
+ * [new branch]      feat-1-test -> feat-1-test
+branch 'feat-1-test' set up to track 'origin/feat-1-test'.
+
+Eshika Dissanayake@LAPTOP-STVQH3IV MINGW64 ~/Documents/Git Course/Day 6/Tic tac toe (feat-1-test)
+$ git status
+On branch feat-1-test
+Your branch is up to date with 'origin/feat-1-test'.
+
+nothing to commit, working tree clean
+
+
